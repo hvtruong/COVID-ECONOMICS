@@ -1,0 +1,18 @@
+Requirements:
+1. Visual Studio Code with Python extension
+2. Python 3.7.9
+3. Anaconda
+
+Instructions to setup Anaconda environment:
+1. Launch Anaconda Prompt
+2. Create an environment named myenv by typing (may take a few minutes): conda create -n myenv python=3.7.9 pandas jupyter seaborn scikit-learn keras tensorflow
+3. Launch Visual Studio Code and go to the source code folder
+4. Once VS Code launches, open the Command Palette (View > Command Palette or Ctrl+Shift+P). Then select the Python: Select Interpreter command
+5. The Python: Select Interpreter command presents the list of available interpreters that VS Code was able to locate automatically.
+From the list, select the Anaconda environment created, which should include the text 'myenv': conda.
+
+Link for details: https://code.visualstudio.com/docs/python/data-science-tutorial
+
+WARNING: If there is an error running performMachineLearning, it is due to the numpy version. To fix the error, in Anaconda prompt:
+Run command: conda activate myenv
+	     pip install numpy==1.19.5 in Anaconda prompt
